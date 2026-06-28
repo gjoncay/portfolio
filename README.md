@@ -10,8 +10,16 @@ Hey there! This is a collection of my recent projects, ranging from cyber threat
 A suite of tools for threat intelligence and cyber defense planning.
 
 - **[Homepage](https://github.com/gjoncay/chinookcyber_homepage)** — A simple splash page and portal linking the ecosystem together, built with Next.js 16 and Tailwind 4.
+  
+  ![Chinook Cyber Homepage](assets/chinook-1.png)
+
 - **[CyberSandBox (Cyber Planner)](https://github.com/gjoncay/cyber-planning-web-app)** — An interactive workspace that applies US Army OAKOC principles to cyber defense. It lets you map out network terrain, pull in live vulnerability metrics (like CISA KEV or EPSS), and toggle between technical and executive views. *(Next.js, React Flow, Zustand)*
+  
+  ![Cyber Planner Workspace](assets/chinook-2.png)
+
 - **[MITRE Diamond Dashboard](https://github.com/gjoncay/chinook-cti)** — An ATT&CK browser based on the Diamond Model of Intrusion Analysis. Instead of a flat wiki, it maps out threat actors, their tactics, and recommended defensive countermeasures using MITRE D3FEND data. *(React, Vite, Recharts)*
+  
+  ![ATT&CK Browser](assets/chinook-3.png)
 
 ### Network & Traffic Analysis
 
@@ -21,6 +29,8 @@ A suite of tools for threat intelligence and cyber defense planning.
 ### Web Apps & Dashboards
 
 - **[Sophie Counseling Site](https://github.com/gjoncay/sophie-counseling-site)** — A freelance project for a mental health practice. Focuses on accessibility, strong SEO, and a calming aesthetic with custom CSS and React.
+  
+  <video src="assets/sophie-site-demo.mp4" controls="controls" width="100%"></video>
 - **[Seattle Move App](https://github.com/gjoncay/seattle-move-app)** — A custom dashboard I built to manage a PCS move. It tracks countdowns, phase-based checklists, and potential housing options on an interactive Leaflet map. *(Next.js, Supabase)*
 - **[Cycling Dashboard](https://github.com/gjoncay/cycling-dashboard)** — A self-hosted dashboard for my Strava data. Includes dark-mode route heatmaps and a markdown journal for keeping track of bike maintenance and ride notes. *(FastAPI, SQLite, Chart.js)*
 - **[Kanban To-Do](https://github.com/gjoncay/kanban-todo)** — A tiny, dependency-free shared Kanban board. It's just a static page and a basic Node server that saves state to a local JSON file. Runs securely behind Tailscale.
