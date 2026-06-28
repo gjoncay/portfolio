@@ -30,7 +30,7 @@ A suite of tools for threat intelligence and cyber defense planning.
 
 - **[Sophie Counseling Site](https://github.com/gjoncay/sophie-counseling-site)** — A freelance project for a mental health practice. Focuses on accessibility, strong SEO, and a calming aesthetic with custom CSS and React.
   
-  <video src="assets/sophie-site-demo.mp4" controls="controls" width="100%"></video>
+  https://github.com/gjoncay/portfolio/raw/master/assets/sophie-site-demo.mp4
 - **[Seattle Move App](https://github.com/gjoncay/seattle-move-app)** — A custom dashboard I built to manage a PCS move. It tracks countdowns, phase-based checklists, and potential housing options on an interactive Leaflet map. *(Next.js, Supabase)*
 - **[Cycling Dashboard](https://github.com/gjoncay/cycling-dashboard)** — A self-hosted dashboard for my Strava data. Includes dark-mode route heatmaps and a markdown journal for keeping track of bike maintenance and ride notes. *(FastAPI, SQLite, Chart.js)*
 - **[Kanban To-Do](https://github.com/gjoncay/kanban-todo)** — A tiny, dependency-free shared Kanban board. It's just a static page and a basic Node server that saves state to a local JSON file. Runs securely behind Tailscale.
