@@ -1,78 +1,35 @@
 # Portfolio
 
-Welcome to my portfolio! Here you can find highlights of the projects I've worked on.
+Hey there! This is a collection of my recent projects, ranging from cyber threat intelligence tools to home lab networking and web development.
 
 ---
 
-## Projects
+## The Projects
 
-### 🛡️ Chinook Cyber Ecosystem
+### Chinook Cyber Ecosystem
+A suite of tools for threat intelligence and cyber defense planning.
 
-**[Chinook Cyber Homepage](https://github.com/gjoncay/chinookcyber_homepage)**
-*A modern, minimalist splash page acting as a portal to the Chinook Cyber ecosystem.*
-**Tech Stack:** Next.js 16, Tailwind CSS 4, Lucide Icons
-**Description:** A dark-mode first design system portal linking to the Cyber Planner and Threat Group Browser, keeping visual consistency through custom glassmorphism utilities.
+- **[Homepage](https://github.com/gjoncay/chinookcyber_homepage)** — A simple splash page and portal linking the ecosystem together, built with Next.js 16 and Tailwind 4.
+- **[CyberSandBox (Cyber Planner)](https://github.com/gjoncay/cyber-planning-web-app)** — An interactive workspace that applies US Army OAKOC principles to cyber defense. It lets you map out network terrain, pull in live vulnerability metrics (like CISA KEV or EPSS), and toggle between technical and executive views. *(Next.js, React Flow, Zustand)*
+- **[MITRE Diamond Dashboard](https://github.com/gjoncay/chinook-cti)** — An ATT&CK browser based on the Diamond Model of Intrusion Analysis. Instead of a flat wiki, it maps out threat actors, their tactics, and recommended defensive countermeasures using MITRE D3FEND data. *(React, Vite, Recharts)*
 
-**[CyberSandBox (Cyber Planner)](https://github.com/gjoncay/cyber-planning-web-app)**
-*An OAKOC-based Cyber Threat Intelligence planning and modeling surface.*
-**Tech Stack:** Next.js 15, React 19, Tailwind CSS, React Flow, Zustand
-**Description:** Applies US Army intelligence-preparation-of-the-battlefield concepts (OAKOC/IPOE) to cyber defense. Analysts map networks as defended terrain, enriched with live vulnerability data (CISA KEV, FIRST EPSS), and present dual-lens (Tactical/Strategic) threat briefings.
+### Network & Traffic Analysis
 
-**[MITRE Diamond Dashboard (ATT&CK Browser)](https://github.com/gjoncay/chinook-cti)**
-*A threat-actor intelligence browser built around the Diamond Model of Intrusion Analysis.*
-**Tech Stack:** React 18, Vite, TypeScript, Tailwind CSS, Recharts, Zustand
-**Description:** Sourced from MITRE ATT&CK and enriched with MITRE D3FEND defensive coverage. Features a threat-landscape dashboard, Diamond Model mapping for every actor, tactic phase profiles, and defensive coverage tracking.
+- **[MikroTik ELK Stack](https://github.com/gjoncay/ELK-homelan)** — A Docker-based Elastic stack for analyzing my home network. It grabs IPFIX and packet captures from a MikroTik router, enriches the traffic with Zeek (for IP-to-domain mapping), and visualizes it in Kibana. Securely exposed via a Tailscale sidecar.
+- **[Netflow Data Dashboard](https://github.com/gjoncay/IPFIX_Dashboard)** — A Streamlit dashboard for NetFlow/IPFIX records. It parses `nfcapd` files into DuckDB, adds GeoIP/ASN context, and surfaces traffic analytics and basic beacon detection.
 
-### 📊 Network & Traffic Analysis
+### Web Apps & Dashboards
 
-**[MikroTik ELK Stack](https://github.com/gjoncay/ELK-homelan)**
-*A comprehensive home-LAN traffic analysis stack running in Docker.*
-**Tech Stack:** Elasticsearch, Kibana, Fleet Server, Zeek, Tailscale
-**Description:** Ingests IPFIX and TZSP packet capture streams from a MikroTik router. Processes data, performs dynamic IP-to-domain and friendly-name enrichments using Zeek, and presents insights via prebuilt Kibana dashboards, all accessible securely via a Tailscale sidecar.
+- **[Sophie Counseling Site](https://github.com/gjoncay/sophie-counseling-site)** — A freelance project for a mental health practice. Focuses on accessibility, strong SEO, and a calming aesthetic with custom CSS and React.
+- **[Seattle Move App](https://github.com/gjoncay/seattle-move-app)** — A custom dashboard I built to manage a PCS move. It tracks countdowns, phase-based checklists, and potential housing options on an interactive Leaflet map. *(Next.js, Supabase)*
+- **[Cycling Dashboard](https://github.com/gjoncay/cycling-dashboard)** — A self-hosted dashboard for my Strava data. Includes dark-mode route heatmaps and a markdown journal for keeping track of bike maintenance and ride notes. *(FastAPI, SQLite, Chart.js)*
+- **[Kanban To-Do](https://github.com/gjoncay/kanban-todo)** — A tiny, dependency-free shared Kanban board. It's just a static page and a basic Node server that saves state to a local JSON file. Runs securely behind Tailscale.
 
-**[Netflow Data Dashboard](https://github.com/gjoncay/IPFIX_Dashboard)**
-*Interactive network-traffic dashboard for NetFlow/IPFIX records.*
-**Tech Stack:** Python, Streamlit, DuckDB, Pandas, Plotly
-**Description:** Parses `nfcapd` captures into a fast columnar store, enriches external IPs with GeoIP/ASN/threat-intel data, and surfaces analytics including top talkers, per-device profiles, beacon detection, and a persistent watchlist.
+### Misc & Tools
 
-### 💻 Web Applications
-
-**[Sophie Counseling Site](https://github.com/gjoncay/sophie-counseling-site)**
-*A modern, calming web presence for a licensed mental health counselor.*
-**Tech Stack:** React, Vanilla CSS, Vite
-**Description:** A responsive, performant, and beautifully designed website for a mental health practice. Features a calming color palette, smooth micro-animations, and SEO/Open Graph optimization to ensure a welcoming experience for prospective clients.
-
-**[Seattle Move App](https://github.com/gjoncay/seattle-move-app)**
-*Custom relocation planner and dashboard to manage a PCS move.*
-**Tech Stack:** Next.js, Tailwind CSS, Leaflet Maps, Supabase
-**Description:** Features interactive countdowns, phase-based checklists, an interactive neighborhood/transit map, and a scrapbook to organize housing options and freeform notes.
-
-**[Kanban To-Do](https://github.com/gjoncay/kanban-todo)**
-*Small, dependency-free shared Kanban board.*
-**Tech Stack:** Node.js, HTML/JS/CSS, LocalStorage
-**Description:** A single static page talking to a tiny Node server that persists tasks to a JSON file. Features drag-and-drop, editable categories, offline caching, and is designed to run securely behind a Tailscale sidecar.
-
-**[Cycling Dashboard](https://github.com/gjoncay/cycling-dashboard)**
-*Self-hosted dashboard for Strava cycling data.*
-**Tech Stack:** FastAPI, SQLite, Jinja2, Leaflet, Chart.js
-**Description:** Visualizes high-density cycling stats with a dark route heatmap featuring glowing paths (green for road, tan for trail). Includes a per-ride mechanical and qualitative markdown journal linked to Strava activities.
-
-### 🛠️ Developer Tools & Research
-
-**App Template**
-*Docker web app boilerplate.*
-**Tech Stack:** Docker, Tailscale
-**Description:** A copy-paste template to quickly start new Docker web apps accessible securely via Tailscale sidecars (`https://<app>.tailnet.ts.net`) using automatic Let's Encrypt certificates.
-
-**Threat Horizon PRC Masterclass**
-*Threat intelligence research.*
-**Description:** A collection of scripts, text-to-speech processing pipelines, and markdown notes analyzing the PRC threat landscape based on advanced threat intelligence.
+- **App Template** — A quick Docker boilerplate for spinning up internal web apps behind Tailscale sidecars with auto-provisioned HTTPS.
+- **Threat Horizon PRC Masterclass** — A collection of scripts, text-to-speech processing pipelines, and notes used to generate briefings on the PRC threat landscape.
 
 ---
 
-**Screenshots:**
-*(Add your screenshots here in the `assets` folder and link them below!)*
-
-<!-- Example screenshot link once you upload an image:
-![Sophie Site Homepage](assets/homepage.png)
--->
+*Screenshots and more detailed documentation are available in the individual repositories.*
